@@ -31,11 +31,18 @@ public class PauseText : MonoBehaviour
     }
     public void Salir()
     {
-        SceneManager.LoadScene(1);
+        if (SceneManager.GetActiveScene().buildIndex == SceneTransitionManager.SCENE_LOBBY)
+        {
+            SceneTransitionManager.LoadScene(SceneTransitionManager.SCENE_MAIN_MENU);
+        }
+        else
+        {
+            SceneTransitionManager.ReturnToLobby();
+        }
     }
     public void Reiniciar()
     {
-        SceneManager.LoadScene(changeScene);
+        SceneTransitionManager.ReloadCurrentScene();
     }
     public void MainContinue()
     {

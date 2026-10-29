@@ -1,0 +1,8 @@
+{
+    "mcpServers": {
+        "funplay": {
+            "transport": "sse",
+            "url": "http://127.0.0.1:23127/mcp/project/c11cb177b0609b44ec8d4cedb4c1f3e0697a025ece3113bdba9b54c15b599d15/"
+        }
+    }
+}

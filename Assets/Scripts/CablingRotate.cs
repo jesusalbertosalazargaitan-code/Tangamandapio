@@ -48,7 +48,7 @@ public class CablingRotate : MonoBehaviour
     void Update()
     {
         timer -= Time.deltaTime;
-        timerText.text = "Tiempo:  " + timer.ToString("0");
+        timerText.text = "Tiempo:\n" + timer.ToString("0");
         if (!isActive1 & !isActive2 & !isActive3 & !isActive4 & !isActive5 & !isActive6 & !isActive7)
             light1.SetActive(true);
 
@@ -59,10 +59,7 @@ public class CablingRotate : MonoBehaviour
             StartCoroutine(Finalmenu1());
         }
         if (light1.activeSelf == true)
-        {
-            Time.timeScale = 0f;
             StartCoroutine(Finalmenu2());
-        }
         
     }
     public void Fila1()

@@ -58,14 +58,14 @@ public class PhotoCamera : MonoBehaviour
         // Espera a que todo el renderizado de la pantalla termine perfectamente
         yield return new WaitForEndOfFrame();
 
-        //Capturamos el tamaño REAL de la ventana de juego
+        //Capturamos el tamaï¿½o REAL de la ventana de juego
         int width = Screen.width;
         int height = Screen.height;
 
-        //Inicializamos la textura con el tamaño completo
+        //Inicializamos la textura con el tamaï¿½o completo
         photoTexture = new Texture2D(width, height, TextureFormat.RGB24, false);
 
-        //Leemos los píxeles de toda la pantalla
+        //Leemos los pï¿½xeles de toda la pantalla
         photoTexture.ReadPixels(new Rect(0, 0, width, height), 0, 0);
         photoTexture.Apply();
 
@@ -118,11 +118,11 @@ public class PhotoCamera : MonoBehaviour
     }
     public void Continuar()
     {
-        SceneManager.LoadScene(1);
+        SceneTransitionManager.ReturnToLobby();
     }
     public void ReiniciarMultimedia()
     {
-        SceneManager.LoadScene(3);
+        SceneTransitionManager.ReloadCurrentScene();
     }
     public void UpdateScore(int scoreToAdd)
     {
