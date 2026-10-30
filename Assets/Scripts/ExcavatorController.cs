@@ -10,6 +10,7 @@ public class ExcavatorController : MonoBehaviour
     public float speedRotation;
     public bool active = true;
     public bool active2;
+    public bool tutorialOff = true;
     public Transform objeto2;
     public Transform objeto3;
     public Transform objeto4;
@@ -20,6 +21,7 @@ public class ExcavatorController : MonoBehaviour
     public GameObject finalMenu1;
     private AudioSource audioSource;
     public AudioClip clip;
+    
     public void Awake()
     {
         Time.timeScale = 0;
@@ -29,8 +31,8 @@ public class ExcavatorController : MonoBehaviour
     }
 
     // Update is called once per frame
-    public void FixedUpdate()
-    {
+    public void Update()
+    {   
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
         float MoveX = Input.GetAxis("Mouse X") * 100f * Time.deltaTime;
@@ -43,6 +45,8 @@ public class ExcavatorController : MonoBehaviour
             timer = 0;
             Time.timeScale = 0;
             finalMenu1.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
+            tutorialOff = false;
         }
 
         if (active == true & !active2)
@@ -53,16 +57,17 @@ public class ExcavatorController : MonoBehaviour
             objeto.transform.Rotate(Vector3.up * 40f * Time.deltaTime * MoveX);
             objeto2.transform.Rotate(Vector3.right * 40f * Time.deltaTime * MoveY);
         }
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (Input.GetKey(KeyCode.E))
         {
-            objeto3.transform.Rotate(Vector3.right * 40f * Time.deltaTime * MoveY);
-            objeto4.transform.Rotate(Vector3.right * 40f * Time.deltaTime * MoveX);
+            objeto3.transform.Rotate(Vector3.right * 40f * Time.deltaTime);
+            objeto4.transform.Rotate(Vector3.right * 40f * Time.deltaTime);
         }
-        else
+        if (Input.GetKey(KeyCode.Q))
         {
-            
+            objeto3.transform.Rotate(Vector3.left * 40f * Time.deltaTime);
+            objeto4.transform.Rotate(Vector3.right * 40f * Time.deltaTime);
         }
-        
+
 
         Vector3 angles = objeto2.transform.localEulerAngles;
 

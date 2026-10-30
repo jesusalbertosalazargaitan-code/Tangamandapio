@@ -10,11 +10,28 @@ public class PauseText : MonoBehaviour
     public GameObject timerText;
     public GameObject mainContinue;
     public int changeScene;
+    ExcavatorController excavatorScript;
+
+    private void Start()
+    {
+        excavatorScript = GetComponent<ExcavatorController>();
+    }
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P) && excavatorScript.tutorialOff == true || Input.GetKeyDown(KeyCode.Escape) && excavatorScript.tutorialOff == true)
+        {
+            Time.timeScale = 0f;
+            tutorial.SetActive(false);
+            textTutorial.SetActive(true);
+            Cursor.lockState = CursorLockMode.None;
+        }
+    }
     public void PauseTutorial()
     {
         Time.timeScale = 0f;
         tutorial.SetActive(false);
         textTutorial.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
     }
     public void ContinueGame()
     {
@@ -22,6 +39,7 @@ public class PauseText : MonoBehaviour
         tutorial.SetActive(true);
         textTutorial.SetActive(false);
         timerText.SetActive(true);
+        Cursor.lockState = CursorLockMode.Locked;
     }
     public void Continue()
     {
