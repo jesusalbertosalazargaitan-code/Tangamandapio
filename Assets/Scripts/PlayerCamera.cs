@@ -13,6 +13,8 @@ public class PlayerCamera : MonoBehaviour
     private float rotationVertical = 0;
     void Start()
     {
+        if (text != null) text.SetActive(false);
+        if (pantallaInicio != null) pantallaInicio.SetActive(true);
         Time.timeScale = 0f;
     }
 
@@ -37,8 +39,8 @@ public class PlayerCamera : MonoBehaviour
     }
     public void Continuar()
     {
-        text.SetActive(true);
-        pantallaInicio.SetActive(false);
+        if (text != null) text.SetActive(true);
+        if (pantallaInicio != null) pantallaInicio.SetActive(false);
         Time.timeScale = 1f;
     }
 }
