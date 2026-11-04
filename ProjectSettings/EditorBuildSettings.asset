@@ -29,4 +29,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EndGame.unity
     guid: 9a8b4120407f82a4cafb96709c744b77
+  - enabled: 1
+    path: Assets/Scenes/Nivel 2.1.unity
+    guid: 146352dc30a71ec458b233dcec325e8e
+  - enabled: 1
+    path: Assets/Scenes/Nivel 2.2.unity
+    guid: 4c156c299de273647b4af6ef2890d706
+  - enabled: 1
+    path: Assets/Scenes/Nivel 2.3.unity
+    guid: ddba992a76d6eb7438fb0bfa8c1e0a81
+  - enabled: 1
+    path: Assets/Scenes/Nivel 3.1.unity
+    guid: 2004fa7012dc1504a889273e5d7e6d17
   m_configObjects: {}

@@ -27,22 +27,22 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        // Obtenemos el input cl醩ico (Vertical para W/S o Flecha Arriba/Abajo, Horizontal para A/D o Flecha Izquierda/Derecha)
+        // Obtenemos el input cl谩sico (Vertical para W/S o Flecha Arriba/Abajo, Horizontal para A/D o Flecha Izquierda/Derecha)
         // Usamos "Vertical" y "Horizontal" para que tenga suavidad, o "GetAxisRaw" si prefieres respuesta inmediata sin inercia.
         float moveX = Input.GetAxis("Horizontal");
         float moveZ = Input.GetAxis("Vertical");
 
-        // Calculamos la direcci髇 deseada en funci髇 del input tradicional
+        // Calculamos la direcci贸n deseada en funci贸n del input tradicional
         Vector3 direccionDeseada = (transform.forward * moveZ) + (transform.right * moveX);
 
-        // Si la magnitud de la direcci髇 deseada es mayor que 1, normalizamos el vector para evitar que el jugador se mueva m醩 r醦ido en diagonal
+        // Si la magnitud de la direcci贸n deseada es mayor que 1, normalizamos el vector para evitar que el jugador se mueva m谩s r谩pido en diagonal
         if (direccionDeseada.magnitude > 1)
         {
-            // Normalizamos el vector de direcci髇 deseada para mantener una velocidad constante en todas las direcciones
+            // Normalizamos el vector de direcci贸n deseada para mantener una velocidad constante en todas las direcciones
             direccionDeseada.Normalize();
         }
 
-        // Establecemos la velocidad del Rigidbody en funci髇 de la direcci髇 deseada multiplicada por la velocidad actual, manteniendo la componente vertical para el salto o la gravedad
+        // Establecemos la velocidad del Rigidbody en funci贸n de la direcci贸n deseada multiplicada por la velocidad actual, manteniendo la componente vertical para el salto o la gravedad
         rb.velocity = new Vector3(direccionDeseada.x * speed, rb.velocity.y, direccionDeseada.z * speed);
     }
     private void OnCollisionEnter(Collision collision)
@@ -72,13 +72,13 @@ public class PlayerController : MonoBehaviour
             instructor4 = true;
         }
         if (collision.gameObject.CompareTag("Gate"))
-            SceneManager.LoadScene(2);
+            SceneTransitionManager.LoadScene(SceneTransitionManager.SCENE_ELEC_Q1);
         if (collision.gameObject.CompareTag("Gate2"))
-            SceneManager.LoadScene(3);
+            SceneTransitionManager.LoadScene(SceneTransitionManager.SCENE_FOTO_Q1);
         if (collision.gameObject.CompareTag("Gate3"))
-            SceneManager.LoadScene(4);
+            SceneTransitionManager.LoadScene(SceneTransitionManager.SCENE_EXCAV);
         if (collision.gameObject.CompareTag("Gate4"))
-            SceneManager.LoadScene(6);
+            SceneTransitionManager.LoadScene(SceneTransitionManager.SCENE_MATH_GAME);
     }
     private void OnCollisionExit(Collision collision)
     {

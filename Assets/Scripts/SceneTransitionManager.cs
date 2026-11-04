@@ -11,10 +11,16 @@ public static class SceneTransitionManager
     public const int SCENE_MATH_NAME = 5;
     public const int SCENE_MATH_GAME = 6;
     public const int SCENE_END_GAME  = 7;
+    public const int SCENE_ELEC_Q1   = 8;
+    public const int SCENE_ELEC_Q2   = 9;
+    public const int SCENE_ELEC_Q3   = 10;
+    public const int SCENE_FOTO_Q1   = 11;
 
     public static void LoadScene(int sceneIndex)
     {
         Time.timeScale = 1.0f;
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         SceneManager.LoadScene(sceneIndex, LoadSceneMode.Single);
     }
 
