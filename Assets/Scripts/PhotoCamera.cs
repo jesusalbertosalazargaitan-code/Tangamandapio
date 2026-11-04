@@ -20,15 +20,17 @@ public class PhotoCamera : MonoBehaviour
     public AudioClip audioClip;
     public int totalPrefabs;
     bool takePhoto = true;
+    bool albumOpened = false;
     void Awake()
     {
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = audioClip;
+        if (camara != null) camara.SetActive(false);
         UpdateScore(0);
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) & takePhoto)
+        if (Input.GetKeyDown(KeyCode.E) && takePhoto)
         {
             Time.timeScale = 0f;
             StartCoroutine(Continue());
@@ -37,7 +39,7 @@ public class PhotoCamera : MonoBehaviour
             camara.SetActive(true);
             audioSource.Play();
         }
-        else camara.SetActive(false);
+
 
         totalPrefabs = prefabHolder.transform.childCount;
         prefabArray = new GameObject[totalPrefabs];
@@ -46,8 +48,9 @@ public class PhotoCamera : MonoBehaviour
         {
             prefabArray[i] = prefabHolder.transform.GetChild(i).gameObject;
         }
-        if(totalPrefabs >= 8)
+        if(totalPrefabs >= 8 && !albumOpened)
         {
+            albumOpened = true;
             StartCoroutine(MenuAlbum());
             takePhoto = false;
         }
@@ -74,6 +77,7 @@ public class PhotoCamera : MonoBehaviour
 
         //Instanciamos el prefab y asignamos el sprite
         GameObject instance = Instantiate(prefab, new Vector3(0f, 0f, 1.309f), Quaternion.identity);
+        instance.GetComponent<SpriteRenderer>().sortingOrder = totalPrefabs;
 
         if (instance.TryGetComponent<SpriteRenderer>(out SpriteRenderer sr))
         {
@@ -83,6 +87,8 @@ public class PhotoCamera : MonoBehaviour
         if (photo != null)
         {
             instance.transform.SetParent(photo.transform, false);
+            totalPrefabs = prefabHolder.transform.childCount;
+            UpdateScore(0);
         }
 
         takePhoto = false;
@@ -95,12 +101,13 @@ public class PhotoCamera : MonoBehaviour
         yield return new WaitForSecondsRealtime(3f);
         AlbumPrefabs();
         album.SetActive(true);
-        text.SetActive(false);
+        if (text != null) text.SetActive(false);
         Time.timeScale = 0;
     }
     IEnumerator Continue()
     {
         yield return new WaitForSecondsRealtime(3f);
+        if (camara != null) camara.SetActive(false);
         Time.timeScale = 1f;
     }
     void AlbumPrefabs()
@@ -127,7 +134,7 @@ public class PhotoCamera : MonoBehaviour
     public void UpdateScore(int scoreToAdd)
     {
         totalPrefabs += scoreToAdd;
-        prefabsText.text = "Fotos: " + totalPrefabs + " /8";
+        if (prefabsText != null) prefabsText.text = "Fotos: " + totalPrefabs + "/8";
 
     }
 }
