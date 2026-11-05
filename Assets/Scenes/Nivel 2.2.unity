@@ -2205,6 +2205,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 257067610452775794, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -59
+      objectReference: {fileID: 0}
+    - target: {fileID: 446427192827386575, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1698.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 446427192827386575, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 597.09
+      objectReference: {fileID: 0}
+    - target: {fileID: 446427192827386575, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 9.199
+      objectReference: {fileID: 0}
+    - target: {fileID: 446427192827386575, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 90
+      objectReference: {fileID: 0}
     - target: {fileID: 2721347104098671429, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
       propertyPath: m_text
       value: "B) Voltaje: cantidad de carga por segundo (A) | Corriente: fuerza que
@@ -2458,6 +2478,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_MillionaireQuizPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 7247696951210430666, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7247696951210430666, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 403
+      objectReference: {fileID: 0}
     - target: {fileID: 8756413934512543055, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
       propertyPath: m_text
       value: "D) Las tres magnitudes miden la velocidad de los protones y se expresan
@@ -2473,8 +2501,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8857266818814450353, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
       propertyPath: questionPrompt
-      value: "\xBFC\xF3mo se definen correctamente el Voltaje (V), la Corriente (I)
-        y la Resistencia (R)?"
+      value: "\xBFCu\xE1l es la definici\xF3n y unidad de medida correcta para las
+        tres magnitudes el\xE9ctricas principales: Voltaje (V), Corriente (I) y Resistencia
+        (R)?"
       objectReference: {fileID: 0}
     - target: {fileID: 8857266818814450353, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
       propertyPath: correctOptionIndex
@@ -2491,19 +2520,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8857266818814450353, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
       propertyPath: options.Array.data[1]
-      value: "Voltaje: cantidad de carga por segundo (A) | Corriente: fuerza que
-        empuja (V) | Resistencia: potencia t\xE9rmica (W)."
-      objectReference: {fileID: 0}
-    - target: {fileID: 8857266818814450353, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
-      propertyPath: options.Array.data[2]
       value: "Voltaje: fuerza que impulsa los electrones (V) | Corriente: cantidad
         de carga que pasa por un punto (A) | Resistencia: oposici\xF3n al paso de
         la corriente (\u03A9)."
       objectReference: {fileID: 0}
     - target: {fileID: 8857266818814450353, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: options.Array.data[2]
+      value: "Voltaje: cantidad de carga por segundo (A) | Corriente: fuerza que
+        empuja (V) | Resistencia: potencia t\xE9rmica (W)."
+      objectReference: {fileID: 0}
+    - target: {fileID: 8857266818814450353, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
       propertyPath: options.Array.data[3]
-      value: "Las tres magnitudes miden la velocidad de los protones y se expresan
-        \xFAnicamente en Ohmios (\u03A9)."
+      value: "Voltaje: velocidad de los protones (V) | Corriente: oposici\xF3n al
+        paso (A) | Resistencia: fuerza que impulsa los electrones (\u03A9)."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

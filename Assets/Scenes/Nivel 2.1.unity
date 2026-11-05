@@ -394,6 +394,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 257067610452775794, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -62
+      objectReference: {fileID: 0}
+    - target: {fileID: 446427192827386575, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1669.904
+      objectReference: {fileID: 0}
+    - target: {fileID: 446427192827386575, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 596.582
+      objectReference: {fileID: 0}
+    - target: {fileID: 446427192827386575, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -5.048
+      objectReference: {fileID: 0}
+    - target: {fileID: 446427192827386575, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 142
+      objectReference: {fileID: 0}
     - target: {fileID: 2721347104098671429, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
       propertyPath: m_text
       value: "B) Protones (carga positiva), Neutrones (sin carga/neutros) y Electrones
@@ -613,6 +633,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5592215746743899622, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: m_RenderMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5592215746743899622, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
       value: 25
       objectReference: {fileID: 0}
@@ -646,6 +670,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_MillionaireQuizPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 7247696951210430666, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7247696951210430666, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503721185509634802, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 21
+      objectReference: {fileID: 0}
     - target: {fileID: 8756413934512543055, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
       propertyPath: m_text
       value: "D) Todas las part\xEDculas subat\xF3micas tienen carga el\xE9ctrica
@@ -661,8 +697,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8857266818814450353, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
       propertyPath: questionPrompt
-      value: "\xBFCu\xE1l es la relaci\xF3n correcta de las 3 part\xEDculas subat\xF3micas
-        seg\xFAn su carga el\xE9ctrica?"
+      value: "Toda la materia est\xE1 formada por \xE1tomos. \xBFCu\xE1l es la combinaci\xF3n
+        correcta de sus part\xEDculas subat\xF3micas seg\xFAn su carga el\xE9ctrica?"
       objectReference: {fileID: 0}
     - target: {fileID: 8857266818814450353, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
       propertyPath: correctOptionIndex
@@ -674,23 +710,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8857266818814450353, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
       propertyPath: options.Array.data[0]
+      value: Protones (carga positiva), Neutrones (sin carga) y Electrones (carga
+        negativa).
+      objectReference: {fileID: 0}
+    - target: {fileID: 8857266818814450353, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: options.Array.data[1]
       value: Protones (carga negativa), Neutrones (carga positiva) y Electrones (sin
         carga).
       objectReference: {fileID: 0}
     - target: {fileID: 8857266818814450353, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
-      propertyPath: options.Array.data[1]
-      value: "Protones (carga positiva), Neutrones (sin carga/neutros) y Electrones
-        (carga negativa, giran alrededor del n\xFAcleo)."
-      objectReference: {fileID: 0}
-    - target: {fileID: 8857266818814450353, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
       propertyPath: options.Array.data[2]
-      value: "Protones (sin carga), Neutrones (giran alrededor del n\xFAcleo) y Electrones
-        (carga positiva)."
+      value: Protones (sin carga), Neutrones (carga negativa) y Electrones (carga
+        positiva).
       objectReference: {fileID: 0}
     - target: {fileID: 8857266818814450353, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
       propertyPath: options.Array.data[3]
-      value: "Todas las part\xEDculas subat\xF3micas tienen carga el\xE9ctrica positiva
-        dentro del n\xFAcleo."
+      value: Protones (carga positiva), Neutrones (carga negativa) y Electrones (sin
+        carga).
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

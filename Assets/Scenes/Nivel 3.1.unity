@@ -4555,6 +4555,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 257067610452775794, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -62
+      objectReference: {fileID: 0}
+    - target: {fileID: 446427192827386575, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1687.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 446427192827386575, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 582.107
+      objectReference: {fileID: 0}
+    - target: {fileID: 446427192827386575, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 3.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 446427192827386575, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 109
+      objectReference: {fileID: 0}
     - target: {fileID: 2721347104098671429, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
       propertyPath: m_text
       value: "B) Al nivel de zoom digital aplicado sobre un lente gran angular sin
@@ -4807,6 +4827,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_MillionaireQuizPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 7247696951210430666, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7247696951210430666, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 388
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503721185509634802, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 17
+      objectReference: {fileID: 0}
     - target: {fileID: 8756413934512543055, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
       propertyPath: m_text
       value: "D) A la posici\xF3n y \xE1ngulo en que colocas la c\xE1mara respecto
@@ -4831,27 +4863,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8857266818814450353, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
       propertyPath: nextSceneBuildIndex
-      value: 3
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8857266818814450353, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
       propertyPath: options.Array.data[0]
-      value: "A la cantidad de memoria RAM que consume la c\xE1mara al guardar una
-        foto."
+      value: "A la sensibilidad ISO configurada en el sensor para capturar im\xE1genes
+        en entornos con muy poca luz."
       objectReference: {fileID: 0}
     - target: {fileID: 8857266818814450353, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
       propertyPath: options.Array.data[1]
-      value: "Al nivel de zoom digital aplicado sobre un lente gran angular sin mover
-        el tr\xEDpode."
+      value: "Al nivel de zoom digital aplicado sobre un lente gran angular sin necesidad
+        de mover el tr\xEDpode."
       objectReference: {fileID: 0}
     - target: {fileID: 8857266818814450353, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
       propertyPath: options.Array.data[2]
-      value: "A la velocidad de obturaci\xF3n medida en segundos para congelar objetos
-        en movimiento."
+      value: "A la posici\xF3n y \xE1ngulo en que colocas la c\xE1mara respecto al
+        sujeto y a la l\xEDnea del horizonte."
       objectReference: {fileID: 0}
     - target: {fileID: 8857266818814450353, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
       propertyPath: options.Array.data[3]
-      value: "A la posici\xF3n y \xE1ngulo en que colocas la c\xE1mara respecto al
-        sujeto y al horizonte."
+      value: "A la velocidad de obturaci\xF3n medida en segundos para lograr congelar
+        sujetos u objetos en movimiento."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -75,15 +75,9 @@ public class PlayerController : MonoBehaviour
             SceneTransitionManager.LoadScene(SceneTransitionManager.SCENE_ELEC_Q1);
         if (collision.gameObject.CompareTag("Gate2"))
             SceneTransitionManager.LoadScene(SceneTransitionManager.SCENE_FOTO_Q1);
-        if (collision.gameObject.CompareTag("Gate3"))
-            SceneTransitionManager.LoadScene(SceneTransitionManager.SCENE_EXCAV);
-        if (collision.gameObject.CompareTag("Gate4"))
-            SceneTransitionManager.LoadScene(SceneTransitionManager.SCENE_MATH_GAME);
+        //if (collision.gameObject.CompareTag("Gate3"))
+        //    SceneTransitionManager.LoadScene(SceneTransitionManager.SCENE_EXCAV);
+        //if (collision.gameObject.CompareTag("Gate4"))
+        //    SceneTransitionManager.LoadScene(SceneTransitionManager.SCENE_MATH_GAME);
     }
-    private void OnCollisionExit(Collision collision)
-    {
-        
-    }
-        
-    
 }

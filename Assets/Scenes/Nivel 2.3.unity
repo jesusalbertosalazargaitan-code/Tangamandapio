@@ -4172,6 +4172,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 257067610452775794, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -69
+      objectReference: {fileID: 0}
+    - target: {fileID: 446427192827386575, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1699.691
+      objectReference: {fileID: 0}
+    - target: {fileID: 446427192827386575, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 625.484
+      objectReference: {fileID: 0}
+    - target: {fileID: 446427192827386575, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 9.845
+      objectReference: {fileID: 0}
+    - target: {fileID: 446427192827386575, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 87
+      objectReference: {fileID: 0}
     - target: {fileID: 2721347104098671429, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
       propertyPath: m_text
       value: "B) La Corriente Alterna solo funciona en paneles solares y la Continua
@@ -4425,6 +4445,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: PF_MillionaireQuizPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 7247696951210430666, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -14
+      objectReference: {fileID: 0}
+    - target: {fileID: 7247696951210430666, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 426
+      objectReference: {fileID: 0}
+    - target: {fileID: 7503721185509634802, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 32
+      objectReference: {fileID: 0}
     - target: {fileID: 8756413934512543055, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
       propertyPath: m_text
       value: D) La Corriente Continua no tiene voltaje y la Corriente Alterna no
@@ -4444,6 +4476,10 @@ PrefabInstance:
         y Corriente Alterna (CA/AC)?"
       objectReference: {fileID: 0}
     - target: {fileID: 8857266818814450353, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
+      propertyPath: correctOptionIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8857266818814450353, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
       propertyPath: nextSceneBuildIndex
       value: 2
       objectReference: {fileID: 0}
@@ -4455,18 +4491,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8857266818814450353, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
       propertyPath: options.Array.data[1]
-      value: "La Corriente Alterna solo funciona en paneles solares y la Continua
-        cambia de direcci\xF3n a 60 Hz."
+      value: "En la Corriente Continua los electrones cambian de direcci\xF3n peri\xF3dicamente
+        (ej. red del hogar) y en la Alterna van siempre en la misma direcci\xF3n
+        (ej. bater\xEDas)."
       objectReference: {fileID: 0}
     - target: {fileID: 8857266818814450353, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
       propertyPath: options.Array.data[2]
-      value: "Ambas corrientes mueven los electrones en la misma direcci\xF3n, pero
-        la Alterna se mide en Ohmios (\u03A9)."
+      value: "En la Corriente Continua el flujo se mide \xFAnicamente en Ohmios (\u03A9)
+        y en la Alterna los electrones no presentan ning\xFAn tipo de resistencia
+        el\xE9ctrica."
       objectReference: {fileID: 0}
     - target: {fileID: 8857266818814450353, guid: 797b4e3e68f69e845a8e929c17f73406, type: 3}
       propertyPath: options.Array.data[3]
-      value: La Corriente Continua no tiene voltaje y la Corriente Alterna no presenta
-        resistencia.
+      value: En la Corriente Continua los electrones carecen de voltaje al moverse
+        y en la Alterna viajan en ambas direcciones al mismo tiempo sin usar Hertz.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
