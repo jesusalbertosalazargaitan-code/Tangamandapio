@@ -42,6 +42,8 @@ public class QuizManager : MonoBehaviour
     private bool _isEvaluating;
     private Coroutine _evaluationCoroutine;
 
+    public GameObject startTest;
+
     private void Awake()
     {
         EnsureInteractiveState();
@@ -202,7 +204,7 @@ public class QuizManager : MonoBehaviour
             }
             PlaySound(correctClip);
 
-            yield return new WaitForSecondsRealtime(1.0f);
+            yield return new WaitForSecondsRealtime(5.0f);
             SceneTransitionManager.LoadScene(nextSceneBuildIndex);
         }
         else
@@ -265,6 +267,11 @@ public class QuizManager : MonoBehaviour
     {
         EnsureInteractiveState();
         SceneTransitionManager.ReturnToLobby();
+    }
+    public void Continue()
+    {
+        this.gameObject.SetActive(true);
+        startTest.SetActive(false);
     }
 }
 

@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerCamera : MonoBehaviour
 {
+    public PhotoCamera photoCamera;
     public GameObject text;
     public GameObject pantallaInicio;
     public GameObject album;
@@ -40,5 +41,6 @@ public class PlayerCamera : MonoBehaviour
         text.SetActive(true);
         pantallaInicio.SetActive(false);
         Time.timeScale = 1f;
+        photoCamera.takePhoto = true;
     }
 }

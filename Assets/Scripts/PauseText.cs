@@ -46,6 +46,8 @@ public class PauseText : MonoBehaviour
     }
     public void MainContinue()
     {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
         textTutorial.SetActive(false);
         tutorial.SetActive(false);
         textTutorial2.SetActive(false);

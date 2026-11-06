@@ -7,7 +7,6 @@ public class PlayerController : MonoBehaviour
 {
     public float changeScale;
     public float speed;
-    public float rotationSpeed;
     public GameObject album;
     Rigidbody rb;
     public GameObject electricidad;
@@ -23,7 +22,6 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         Time.timeScale = changeScale;
     }
-
 
     void FixedUpdate()
     {
@@ -51,24 +49,32 @@ public class PlayerController : MonoBehaviour
         {
             electricidad.SetActive(true);
             Time.timeScale = 0;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             instructor = true;
         }
         if (collision.gameObject.CompareTag("Instructor2") & !instructor2)
         {
             multimedia.SetActive(true);
             Time.timeScale = 0;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             instructor2 = true;
         }
         if (collision.gameObject.CompareTag("Instructor3") & !instructor3)
         {
             contabilidad.SetActive(true);
             Time.timeScale = 0;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             instructor3 = true;
         }
         if (collision.gameObject.CompareTag("Instructor4") & !instructor4)
         {
             construccion.SetActive(true);
             Time.timeScale = 0;
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
             instructor4 = true;
         }
         if (collision.gameObject.CompareTag("Gate"))
