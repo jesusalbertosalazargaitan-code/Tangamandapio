@@ -20,5 +20,5 @@ Por decisión de arquitectura modular y enfoque pedagógico del Producto Mínimo
 
 ## 3. Firmas de Conformidad del Equipo Desarrollador
 - **Jesús Alberto Salazar Gaitán** – Programación e Integración de Mecánicas *(Firmado)*
-- **Miguel Ángel Murcia Yagüe** – Diseño de Entornos y Desarrollo Visual *(Firmado)*
-- **David Alejandro Montañez Torres** – Diseño de UI y Documentación Técnica *(Firmado)*
+- **Miguel Ángel Murcia Yagüe** – Diseño de Entornos y Documentacion Tenica *(Firmado)*
+- **David Alejandro Montañez Torres** – Diseño de UI y Desarrollo Visual *(Firmado)*
