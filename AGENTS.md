@@ -37,7 +37,7 @@ This section is managed by Funplay MCP for Unity. Everything between the begin a
 ## Project
 
 - Project root: `C:\Users\Aprendiz\Documents\Proyecto de grado Sena 2026\Tangamandapio`
-- Product name: `Tangamandapio`
+- Product name: `SchoolSena`
 
 ## Notes
 
